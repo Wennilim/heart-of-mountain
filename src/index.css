@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-fjalla: "Fjalla One", sans-serif;
+}
+
+html,
+body {
+  /* Match the Hero's terminal dark state and FAQs background — prevents any white flash at the section seam */
+  background-color: #050504;
+  margin: 0;
+  padding: 0;
+}

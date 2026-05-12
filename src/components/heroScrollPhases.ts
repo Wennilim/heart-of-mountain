@@ -1,0 +1,40 @@
+export const SCROLL_PHASE = {
+  heroHoldEnd: 0.2,
+  heroExitEnd: 0.34,
+  videoStart: 0.24,
+  videoVisible: 0.3,
+  videoHoldEnd: 0.47,
+  videoEnd: 0.54,
+  tunnelStart: 0.5,
+  tunnelVisible: 0.6,
+  storyStart: 0.54,
+  storyVisible: 0.58,
+  storyHoldEnd: 0.65,
+  storyEnd: 0.69,
+  answerStart: 0.67,
+  answerVisible: 0.71,
+  answerHoldEnd: 0.77,
+  answerEnd: 0.81,
+  aboutStart: 0.79,
+  aboutVisible: 0.825,
+  aboutHoldEnd: 0.86,
+  aboutEnd: 0.885,
+  quoteStart: 0.865,
+  quoteVisible: 0.89,
+  quoteLift: 0.915,
+  quoteHoldEnd: 0.935,
+  quoteEnd: 0.95,
+  galleryEnd: 0.95,
+  reviewStart: 0.945,
+  reviewVisible: 0.958,
+  reviewHoldEnd: 0.98,
+  reviewEnd: 0.99,
+  bookStart: 0.988,
+} as const;
+
+export const HERO_ABOUT_ACTIVE_RANGE = {
+  start: SCROLL_PHASE.aboutStart,
+  end: SCROLL_PHASE.aboutEnd,
+} as const;
+
+export const HERO_ABOUT_SCROLL_PROGRESS = SCROLL_PHASE.aboutVisible + 0.01;
